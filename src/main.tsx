@@ -26,6 +26,9 @@ function App() {
     "Video",
     "",
   ];
+
+  const podcasts = ["The Morning", "Modern Love", 'Listen to "The Daily"'];
+
   return (
     <div className={styles.root}>
       <div className={styles.topBanner}>
@@ -42,7 +45,12 @@ function App() {
           ))}
         </div>
       </div>
-      <div className={styles.midBanner}></div>
+      <div className={styles.midBanner}>
+        {podcasts.map((pc) => (
+          <div className={styles.podcast}>{pc}</div>
+        ))}
+        <div>Weather</div>
+      </div>
       <div className={styles.content}></div>
     </div>
   );
