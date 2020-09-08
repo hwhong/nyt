@@ -1,5 +1,6 @@
 .root {
   grid-template-rows: 25% 90px auto;
+  padding: 30px;
   display: grid;
   height: 100vh;
 }
@@ -42,9 +43,10 @@
 }
 
 .tabs {
-  grid-column: 1 / -1;
   grid-template-columns: repeat(21, minmax(0, auto));
+  border-top: 1px solid gainsboro;
   border-bottom: 1px solid #000;
+  grid-column: 1 / -1;
   display: grid;
 }
 
